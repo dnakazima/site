@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Deletar</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container">
+			<div class="card card-register mx-auto col-6 px-0">
+				<div class="card-header bg-secondary text-light">Alterar</div>
+				<div class="card-body">
+					<form action="alterar_cliente2.php" method="POST">
+						<div class="form-group">
+							<div class="form-row">
+								
+								
+								
+								<div class="col-12">
+									<label for="ALTERAR">DIGITE O ID DO CLIENTE PARA ALTERAR</label>
+									<input type="ALTERAR" name="ALTERAR" id="ALTERAR" class="form-control">
+								</div>
+								
+								<div class="col-12">
+									<label for="TABELA">QUAL TABELA ALTERAR?</label>
+									<select name="TABELA" class="form-control">
+										<option value="">Selecione </option>
+										<option value="CLIENTE">CLIENTE</option>
+										<option value="ENDERECO">ENDERECO</option>
+										<option value="TELEFONE">TELEFONE</option> 
+									</select>
+								</div>
+								
+								
+								<div class="col-12">
+									<label for="CAMPO">ESCOLHA O CAMPO DA TABELA PARA ALTERAR</label>
+									<select name="CAMPO" class="form-control">
+										<optgroup label="CLIENTE">
+											<option value="NOME">NOME</option>
+											<option value="SEXO">SEXO</option>
+											<option value="EMAIL">EMAIL</option>
+											<option value="CPF">CPF</option>
+										</optgroup>
+										
+										<optgroup label="ENDERECO">
+											<option value="RUA">RUA</option>
+											<option value="BAIRRO">BAIRRO</option>
+											<option value="CIDADE">CIDADE</option>
+											<option value="ESTADO">ESTADO</option>
+											<option value="CIDADE">CIDADE</option>
+										</optgroup>
+										
+										<optgroup label="TELEFONE">
+											<option value="TIPO">TIPO</option>
+											<option value="NUMERO">NUMERO</option>
+											</optgroup>
+									</select>
+								</div>
+								
+								<div class="col-12">
+									<label for="NOVO">DIGITE O NOVO VALOR DO CAMPO</label>
+									<input type="NOVO" name="NOVO" id="NOVO" class="form-control">
+								</div>							
+							</div>
+							<button class="btn btn-danger mt-3 btn-block" 
+							onClick="return confirm ('Deseja realmente alterar?')">Alterar</button>   
+							<div class="text-center">
+								<a href="index.html" class="btn btn-primary mt-3 btn-block">Página inicial</a>
+							</div>
+						</div>	
+					</form>
+						
+					</div>
+				</div>
+			</div>       
+		</body>
+	</html>		

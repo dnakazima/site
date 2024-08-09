@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro do cliente</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="card card-register mx-auto col-8 px-0">
+            <div class="card-header bg-primary">Cadastro de telefone.</div>
+            <div class="card-body">
+                <form action="cadastro_telefone.php" method="POST">
+                    <div class="form-group">
+                        <div class="form-row">
+							<div class="col-12">
+                                <label for="IDCLIENTE">NUMERO DO ID DO CLIENTE</label>
+                                <input type="text" name="IDCLIENTE" class="form-control" placeholder="Digite O ID DO CLIENTE">
+                            </div>
+						
+                             <div class="col-12">
+                               <label for="TIPO">TIPO</label>
+                                <select name="TIPO" class="form-control">
+                                    <option value="">Selecione um tipo de telefone</option>
+                                    <option value="RES">RESIDENCIAL</option>
+									<option value="COM">COMERCIAL</option>
+									<option value="CEL">CELULAR</option> 	
+                                </select>
+                            </div>
+                            <div class="col-12">
+                                <label for="NUMERO">TELEFONE</label>
+								<input type="tel" required="required" maxlength="10" class="form-control" name="NUMERO" />
+								<!--<input type="number" maxlength="12" class="form-control" placeholder="Digite seu telefone" name="CPF">-->
+                                <!--<input type="text" name="NUMERO" class="form-control" placeholder="Digite seu cpf">   -->
+                            </div>
+                         </div>
+                    </div>
+                    <button class="btn btn-primary btn-block">Cadastrar</button>
+                    <div class="text-center">
+                        <a href="../index.html" class="d-block mt-3">Página inicial</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>       
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Cadastro do cliente</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="card card-register mx-auto col-8 px-0">
+            <div class="card-header bg-primary">Cadastro de acesso</div>
+            <div class="card-body">
+                <form action="userLogin.php" method="POST">
+                    <div class="form-group">
+                        <div class="form-row">
+							
+                            <div class="col-12">
+                                <label for="NOME">NOME</label>
+                                <input type="text" name="NOME" class="form-control" placeholder="Digite seu nome">
+                            </div>
+                            
+                            <div class="col-12">
+                                <label for="USERNAME">USERNAME</label>
+                                <input type="text" name="USERNAME" class="form-control" placeholder="Digite seu username">
+                            </div>
+                           
+                            <div class="col-12">
+                                <label for="PASSWORD">SENHA</label>
+                                <input type="password" name="PASSWORD" class="form-control" placeholder="Digite sua senha">
+                            </div>
+                            <div class="col-12">
+                                <label for="PASSWORD">Confirme sua SENHA</label>
+                                <input type="password" name="PASSWORD1" class="form-control" placeholder="Confirme sua senha">
+                            </div>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    <button class="btn btn-primary btn-block">Cadastrar</button>
+                    <div class="text-center">
+                        <a href="../index.html" class="d-block mt-3">Página inicial</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>       
+</body>
+</html>
